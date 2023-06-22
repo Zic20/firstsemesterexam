@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFFFFF;
+    line-height: 1.5;
+}
+
+:root {
+    --color-primary: #005AE2;
+    --color-primary-2: #0065FE;
+    --color-white: #FFFFFF;
+    --gradient-background: #1E3448;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.text-primary {
+    color: var(--color-primary-2);
+}
+
+
+.cta_buttons {
+    margin-bottom: 3rem;
+
+    & button {
+        margin: 15px;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    background: transparent;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+
+#showcase {
+    text-align: center;
+    padding-top: 1rem;
+    position: relative;
+
+    .showcase_header {
+        line-height: 3.78rem;
+    }
+
+    .info {
+        width: 47%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        line-height: 1.5;
+
+    }
+
+    #info_card {
+        position: relative;
+        width: 35rem;
+        border: 1px solid var(--color-primary);
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 3rem;
+        padding: 3rem 3rem;
+
+        #info_card_anchor {
+            position: absolute;
+            top: 1rem;
+            left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        #info_details {
+            width: 76%;
+            margin: auto;
+            margin-top: 3rem;
+        }
+    }
+
+    #showcase_foot {
+        position: relative;
+        width: 100%;
+        height: 93px;
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 93px solid #F8F7F7;
+
+        & div {
+            width: 100%;
+            height: 50px;
+            position: absolute;
+            top: 20px;
+            left: 2%;
+            border-radius: 50%;
+            background: linear-gradient(180deg, rgba(226, 233, 240, 0.7) 10.68%, rgba(220, 228, 235, 1) 44.01%, rgba(226, 233, 240, 1) 100%);
+            filter: drop-shadow(0px 4px 4px rgba(18, 36, 89, 0.35));
+        }
+    }
+}
+
+#myurls {
+    display: flex;
+    padding: 2rem 6rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9FBFD;
+
+    .head {
+        width: 35%;
+    }
+
+    .details {
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+
+        & div {
+            width: 20%;
+        }
+    }
+}
+
+#whyUs {
+    padding: 6rem;
+    display: flex;
+    justify-content: space-between;
+
+    .head {
+        width: 35%;
+    }
+
+    .details {
+        width: 60%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        & div {
+            width: 16rem;
+            margin: 0 2rem 3rem 0;
+        }
+    }
+}
+
+#pricing {
+    text-align: center;
+
+    & h2 {
+        margin-bottom: .7rem;
+    }
+
+    #pricing_cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+
+        .card {
+            text-align: left;
+            padding: 1rem 1.8rem;
+            border: 1px solid var(--color-primary-2);
+            border-radius: 5px;
+
+            &:first-of-type {
+                border-right: none;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            &:last-of-type {
+                border-left: none;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            .title {
+                margin-bottom: 1rem;
+            }
+
+            .price,
+            .description {
+                margin-bottom: 10px;
+            }
+
+            & ul {
+                list-style: none;
+
+                & li {
+                    margin-bottom: .6rem;
+                    font-size: .9rem;
+
+                    & i {
+                        color: var(--color-primary-2);
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        .card.primary {
+            color: var(--color-white);
+            background-color: #1E3448;
+            border: none;
+            height: 400px;
+            padding-top: 4rem;
+
+            & li i {
+                color: var(--color-white);
+            }
+        }
+
+
+    }
+}
+
+#formsection {
+    
+}
