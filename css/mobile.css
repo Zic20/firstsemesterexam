@@ -1,0 +1,146 @@
+
+
+#showcase {
+    position: relative;
+    text-align: center;
+    padding-top: 1rem;
+
+    .info {
+        width: 80%;
+    }
+
+    #info_card {
+        width: 90%;
+
+        #info_details {
+            width: 100%;
+        }
+    }
+
+    #vector2 {
+        display: none;
+    }
+
+    #showcase_foot {
+        height: 30px;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 40px solid #F8F7F7;
+
+        & div {
+            height: 20px;
+            top: 10px;
+        }
+    }
+}
+
+#myurls {
+    flex-direction: column;
+    padding: 2rem 1rem;
+
+    .head {
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .details {
+        display: flex;
+        width: 100%;
+        padding-top: 1.5rem;
+        justify-content: center;
+        font-size: .8rem;
+
+        & div {
+            margin: auto;
+            margin-top: 0;
+        }
+    }
+}
+
+
+
+#pricing {
+    text-align: center;
+    padding: 2rem;
+
+    & h2 {
+        margin-bottom: .7rem;
+    }
+
+    #pricing_cards {
+        display: block;
+
+        .card {
+            margin-bottom: 1rem;
+
+            &:first-of-type {
+                border: 1px solid var(--color-primary-2);
+                border-radius: 5px;
+            }
+
+            &:last-of-type {
+                border: 1px solid var(--color-primary-2);
+                border-radius: 5px;
+            }
+
+            .title {
+                margin-bottom: .7rem;
+            }
+        }
+
+        .card.primary {
+            height: 350px;
+            padding: 2rem;
+        }
+    }
+}
+
+#formsection form {
+    width: 95%;
+}
+
+#faq {
+    padding: 2rem;
+    display: block;
+
+    & ul {
+        width: 90%;
+    }
+}
+
+footer {
+    background-size: 250px, 0;
+    padding: 2rem;
+
+    .footer_data {
+        flex-direction: column;
+        align-items: center;
+
+        .head {
+            width: 50%;
+        }
+
+        & div {
+            width: 95%;
+            margin-top: 1rem;
+
+            .body {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                gap: 2rem;
+
+                & div {
+                    width: 35%;
+                    margin: auto;
+                    margin-top: .5rem;
+
+                    &:last-of-type {
+                        margin: 2rem;
+                    }
+                }
+            }
+        }
+
+    }
+}

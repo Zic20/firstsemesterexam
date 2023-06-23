@@ -1,0 +1,233 @@
+.nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 12px;
+}
+
+.nav .toggle {
+    order: 5;
+}
+
+.navigation__icon {
+    display: inline-block;
+    width: 2rem;
+    height: .15rem;
+    background-color: black;
+    position: relative;
+    margin-top: 1rem;
+    order: 4;
+}
+
+.navigation__icon::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    top: -8px;
+    left: 0;
+    transition: all .3s;
+}
+
+.navigation__icon::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    background-color: black;
+    bottom: -8px;
+    left: 0;
+    transition: all .3s;
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::after {
+    top: 0;
+    background-color: black;
+    transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon::before {
+    top: 0;
+    background-color: black;
+    transform: rotate(-135deg);
+}
+
+.navigation__checkbox:checked+.navigation__button .navigation__icon {
+    background-color: transparent;
+}
+
+.navigation__checkbox:checked~ul {
+    display: block;
+    position: absolute;
+    top: 4rem;
+    left: 8rem;
+    background-color: #FFFFFF;
+    width: 50%;
+    border-radius: .5rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.navigation__checkbox:checked~ul li {
+    text-align: center;
+    width: 100%;
+    padding: 1rem 0;
+
+    &:hover {
+        background-color: var(--color-primary);
+
+        color: #FFFFFF;
+
+        & a {
+            color: #FFFFFF;
+        }
+    }
+}
+
+.navigation__checkbox:checked~ul li a {
+    width: 100%;
+}
+
+body:has(.navigation__checkbox:checked) {
+    overflow: hidden;
+}
+
+.nav ul {
+    display: none;
+}
+
+#logo img {
+    width: 70%;
+}
+
+#showcase {
+    text-align: center;
+    padding-top: 1rem;
+    position: relative;
+
+    .showcase_header {
+        line-height: 3.78rem;
+    }
+
+    .info {
+        width: 47%;
+        margin: auto;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        line-height: 1.5;
+    }
+
+    #info_card {
+        position: relative;
+        width: 40rem;
+        border-radius: 10px;
+        margin: auto;
+        margin-bottom: 3rem;
+        padding: 2rem 3rem;
+        text-align: left;
+        background: rgba(254, 254, 254, 0.1);
+        border: 0.5px solid #005AE2;
+        backdrop-filter: blur(106px);
+
+        & img {
+            width: 50%;
+        }
+
+        #info_details {
+            width: 76%;
+            margin: auto;
+            margin-top: .4rem;
+            text-align: center;
+        }
+    }
+
+    #vector2 {
+        display: none;
+    }
+
+    #showcase_foot {
+        height: 50px;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 50px solid #F8F7F7;
+
+        & div {
+            height: 30px;
+            top: 12px;
+        }
+    }
+}
+
+
+#whyUs {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .head {
+        width: 100%;
+    }
+
+    .details {
+        width: 100%;
+        justify-content: flex-start;
+
+        & div {
+            width: 45%;
+            margin: 2rem 8px 1rem;
+        }
+    }
+}
+
+
+#pricing #pricing_cards {
+    padding: 0 2rem;
+
+    .card {
+        padding: .8rem;
+
+        .price,
+        .description {
+            margin-bottom: 10px;
+        }
+    }
+
+    .card.primary {
+        padding-top: 2rem;
+    }
+}
+
+footer {
+    padding: 2rem;
+
+    .footer_data {
+        display: flex;
+        justify-content: space-between;
+
+        .head {
+            width: 30%;
+            text-align: center;
+
+            & ul {
+
+                gap: 1rem;
+
+            }
+        }
+
+        & div {
+            width: 69%;
+
+            .body {
+                margin-bottom: 10px;
+
+                & div {
+                    width: 22%;
+                }
+            }
+        }
+
+    }
+}
