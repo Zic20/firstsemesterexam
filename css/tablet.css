@@ -170,8 +170,6 @@ body:has(.navigation__checkbox:checked) {
     padding: 2rem;
     display: flex;
     flex-direction: column;
-
-
 }
 
 #whyUs .head {
@@ -181,12 +179,11 @@ body:has(.navigation__checkbox:checked) {
 #whyUs .details {
     width: 100%;
     justify-content: flex-start;
-
 }
 
 #whyUs .details div {
-    width: 45%;
-    margin: 2rem 8px 1rem;
+    width: 30%;
+    margin: 1rem 5px;
 }
 
 
