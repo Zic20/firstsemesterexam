@@ -1,61 +1,75 @@
+.with-stroke::after {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    display: inline-block;
+    content: url(/assets/icons/Vector\ 3.png);
+    width: 10px;
+}
 
+.nav button {
+    display: none;
+}
 
 #showcase {
     position: relative;
     text-align: center;
     padding-top: 1rem;
+}
 
-    .info {
-        width: 80%;
-    }
+#showcase .info {
+    width: 80%;
+    padding: 1rem;
+}
 
-    #info_card {
-        width: 90%;
+#showcase #info_card {
+    width: 90%;
 
-        #info_details {
-            width: 100%;
-        }
-    }
+}
 
-    #vector2 {
-        display: none;
-    }
+#showcase #info_card #info_details {
+    width: 100%;
+}
 
-    #showcase_foot {
-        height: 30px;
-        border-left: 50px solid transparent;
-        border-right: 50px solid transparent;
-        border-bottom: 40px solid #F8F7F7;
+#showcase #vector2 {
+    display: none;
+}
 
-        & div {
-            height: 20px;
-            top: 10px;
-        }
-    }
+#showcase #showcase_foot {
+    height: 30px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 40px solid #F8F7F7;
+}
+
+#showcase #showcase_foot div {
+    height: 20px;
+    top: 10px;
 }
 
 #myurls {
     flex-direction: column;
     padding: 2rem 1rem;
+}
 
-    .head {
-        font-size: 1rem;
-        width: 100%;
-        text-align: center;
-    }
+#myurls .head {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+}
 
-    .details {
-        display: flex;
-        width: 100%;
-        padding-top: 1.5rem;
-        justify-content: center;
-        font-size: .8rem;
+#myurls .details {
+    display: flex;
+    width: 100%;
+    padding-top: 1.5rem;
+    justify-content: center;
+    font-size: .8rem;
 
-        & div {
-            margin: auto;
-            margin-top: 0;
-        }
-    }
+}
+
+#myurls .details div {
+    margin: auto;
+    margin-top: 0;
 }
 
 
@@ -64,36 +78,38 @@
     text-align: center;
     padding: 2rem;
 
-    & h2 {
-        margin-bottom: .7rem;
-    }
 
-    #pricing_cards {
-        display: block;
+}
 
-        .card {
-            margin-bottom: 1rem;
+#pricing h2 {
+    margin-bottom: .7rem;
+}
 
-            &:first-of-type {
-                border: 1px solid var(--color-primary-2);
-                border-radius: 5px;
-            }
+#pricing #pricing_cards {
+    display: block;
+}
 
-            &:last-of-type {
-                border: 1px solid var(--color-primary-2);
-                border-radius: 5px;
-            }
+#pricing #pricing_cards .card {
+    margin-bottom: 1rem;
+}
 
-            .title {
-                margin-bottom: .7rem;
-            }
-        }
+#pricing #pricing_cards .card:first-of-type {
+    border: 1px solid var(--color-primary-2);
+    border-radius: 5px;
+}
 
-        .card.primary {
-            height: 350px;
-            padding: 2rem;
-        }
-    }
+#pricing #pricing_cards .card:last-of-type {
+    border: 1px solid var(--color-primary-2);
+    border-radius: 5px;
+}
+
+#pricing #pricing_cards .card .title {
+    margin-bottom: .7rem;
+}
+
+#pricing #pricing_cards .card.primary {
+    height: 350px;
+    padding: 2rem;
 }
 
 #formsection form {
@@ -104,43 +120,46 @@
     padding: 2rem;
     display: block;
 
-    & ul {
-        width: 90%;
-    }
+}
+
+#faq ul {
+    width: 90%;
 }
 
 footer {
     background-size: 250px, 0;
     padding: 2rem;
 
-    .footer_data {
-        flex-direction: column;
-        align-items: center;
+}
 
-        .head {
-            width: 50%;
-        }
+footer .footer_data {
+    flex-direction: column;
+    align-items: center;
+}
 
-        & div {
-            width: 95%;
-            margin-top: 1rem;
+footer .footer_data .head {
+    width: 50%;
+}
 
-            .body {
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                gap: 2rem;
+footer .footer_data div {
+    width: 95%;
+    margin-top: 1rem;
 
-                & div {
-                    width: 35%;
-                    margin: auto;
-                    margin-top: .5rem;
+}
 
-                    &:last-of-type {
-                        margin: 2rem;
-                    }
-                }
-            }
-        }
+footer .footer_data div .body {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+}
 
-    }
+footer .footer_data div .body div {
+    width: 35%;
+    margin: auto;
+    margin-top: .5rem;
+
+}
+
+footer .footer_data div .body div:last-of-type {
+    margin: 2rem;
 }
