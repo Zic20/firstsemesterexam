@@ -292,6 +292,8 @@ h3 {
     border-radius: 5px;
 }
 
+
+
 #pricing #pricing_cards .card:first-of-type {
     border-right: none;
     border-top-right-radius: 0;
@@ -311,6 +313,11 @@ h3 {
 #pricing #pricing_cards .card .price,
 .description {
     margin-bottom: 10px;
+}
+
+#pricing #pricing_cards .card .price {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 #pricing #pricing_cards .card ul {
