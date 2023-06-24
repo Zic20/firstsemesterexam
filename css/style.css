@@ -317,7 +317,7 @@ h3 {
 
 #pricing #pricing_cards .card .price {
     font-size: 1.5rem;
-    font-weight: 700;
+    font-family: 'Gilroy-bold', sans-serif;
 }
 
 #pricing #pricing_cards .card ul {
